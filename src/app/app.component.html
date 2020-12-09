@@ -1,7 +1,13 @@
 <h1>HTTP Angular Basics</h1>
-
+<p>Hosted on {{ name }}</p>
 <button (click)="getPosts()">GET POSTS</button>
 
 <div *ngFor="let post of posts | async">
 	{{ post | json }}
+</div>
+<br><br>
+<button (click)="getPokemon()">GET POKEMONS</button>
+
+<div *ngFor="let pokemon of pokemons | async">
+	{{ pokemon | json }}
 </div>
