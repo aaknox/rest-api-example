@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>HTTP Angular Basics</h1>
+
+<button (click)="getPosts()">GET POSTS</button>
+
+<div *ngFor="let post of posts | async">
+	{{ post | json }}
+</div>
